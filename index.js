@@ -23,4 +23,4 @@ function countDown() {
 
 countDown();
 
-setInterval(countDown, 1000);s
+setInterval(countDown, 1000);

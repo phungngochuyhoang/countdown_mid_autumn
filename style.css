@@ -5,35 +5,54 @@
 body {
     background: url('./moon.png') no-repeat center;
     background-size: cover;
-    height: 100vh;
 }
 section {
-   height: 100vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 span {
-    margin: 15rem 20px 0;
-    color: #ffffff;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 2px 4px 5px #111111;
-    font-weight: bold;
     display: block;
+    margin: 8em 10px 0;
+    font-size: 2.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-shadow: 5px 5px 8px #111111;
+    position: relative;
 }
-span::after{
-    margin-left: 10px;
+span:after {
+    content: ':';
+    padding-left: 20px;
 }
-span:nth-child(1)::after {
-    content: 'Day'
+span:last-child:after {
+    content: '';
 }
-span:nth-child(2)::after {
-    content: 'Hours'
+span:nth-child(1)::before {
+    content: 'Day';
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    font-size: 15px;
 }
-span:nth-child(3)::after {
-    content: 'Minute'
+span:nth-child(2)::before {
+    content: 'Hours';
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    font-size: 15px;
 }
-span:nth-child(4)::after {
-    content: 'Seconds'
+span:nth-child(3)::before {
+    content: 'Minute';
+    position: absolute;
+    top: 35px;
+    left: -2px;
+    font-size: 15px;
+}
+span:nth-child(4)::before {
+    content: 'Seconds';
+    position: absolute;
+    top: 35px;
+    left: -10px;
+    font-size: 15px;
 }
