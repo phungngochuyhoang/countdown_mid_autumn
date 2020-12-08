@@ -1,4 +1,4 @@
-var endDay = '1 October 2020';
+var endDay = '12 February 2021';
 var d = document.getElementById('day');
 var h = document.getElementById('hours');
 var m = document.getElementById('minute');
